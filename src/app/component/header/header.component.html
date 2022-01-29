@@ -6,7 +6,8 @@
             </i>
             <strong style="font-size: 30px;">AMY'Z</strong>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search products">
+                <input type="text" [(ngModel)]="searchTerm" (keyup)="search($event)" class="form-control"
+                    placeholder="Search products">
             </div>
             <span class="fas fa-search search-icon">
 
